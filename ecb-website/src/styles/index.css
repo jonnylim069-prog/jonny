@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.ecb-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.ecb-btn-primary {
+  @apply bg-ecb-blue text-white px-6 py-2 rounded-lg hover:bg-ecb-darkblue transition-colors;
+}
+
+.ecb-btn-secondary {
+  @apply border-2 border-ecb-blue text-ecb-blue px-6 py-2 rounded-lg hover:bg-ecb-blue hover:text-white transition-colors;
+}
+
+.ecb-section {
+  @apply py-16 md:py-24;
+}
+
+.ecb-heading {
+  @apply text-3xl md:text-4xl font-bold text-ecb-darkblue mb-4;
+}
+
+.ecb-subheading {
+  @apply text-xl md:text-2xl font-semibold text-ecb-blue mb-3;
+}
